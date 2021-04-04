@@ -1,0 +1,19 @@
+#container_head th {
+	width: 500px;
+	font-size: 32pt;
+	padding-bottom: 30px;
+}
+
+#container td {
+	vertical-align: top;
+}
+
+.stats_table {
+	width: 400px;
+	text-align: center;
+}
+
+input[type=text] {
+	width: 20px;
+	text-align: right;
+}

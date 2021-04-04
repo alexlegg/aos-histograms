@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "d3": "^6.5.0",
+    "jquery": "^3.5.1",
+    "typescript": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/d3": "^6.3.0",
+    "@types/node": "^14.14.31",
+    "cssnano": "^4.1.10",
+    "shx": "^0.3.2"
+  },
+  "name": "aos-histograms",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./index.html --public-url ./",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "keywords": [],
+  "author": "Alex Legg",
+  "license": "MIT",
+  "description": ""
+}
